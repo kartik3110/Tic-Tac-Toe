@@ -69,8 +69,8 @@ function App() {
     })
   }
 
-  let isDraw = (gameTurns.length === 9 && !winner);
   const winner = deriveWinner(board, players)
+  let isDraw = (gameTurns.length === 9 && !winner);
   
   const updatePlayer = (symbol, playerName) => { 
     setPlayers(oldPlayers => {
